@@ -98,6 +98,19 @@ body {
   display: block;
 }
 
+.mv {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mv .mv__logo {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+}
+
 .catch {
   width: 100vw;
   height: 100vh;
