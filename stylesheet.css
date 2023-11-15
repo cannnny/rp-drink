@@ -97,3 +97,20 @@ body {
 .sp-navi.open {
   display: block;
 }
+
+.catch {
+  width: 100vw;
+  height: 100vh;
+  background-color: #b2cbe4;
+}
+
+.catch h2 {
+  display: none;
+}
+
+.catch .catch__text {
+  margin-left: 10%;
+  margin-right: 20%;
+  font-size: 18px;
+  line-height: 45px;
+}
