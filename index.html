@@ -10,22 +10,39 @@
   </head>
   <body>
     <header>
-      <div class="header__menu"></div>
-      <div class="sp-menu"></div>
+      <div class="header__menu pc-navi">
+        <button id="js-header-button" class="header__menu__button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div id="js-sp-navi" class="sp-navi">
+        <ul class="sp-navi__list">
+          <li class="sp-navi__item">製品情報</li>
+          <li class="sp-navi__item">レシピ</li>
+          <li class="sp-navi__item">販売店</li>
+          <li class="sp-navi__item">製造所</li>
+          <li class="sp-navi__item">Q&A</li>
+          <li class="sp-navi__item">広告</li>
+          <li class="sp-navi__item">オンラインストア</li>
+        </ul>
+      </div>
     </header>
-    <div class="main">
+    <main>
       <div class="mv"></div>
-      <div class="catch"></div>
-      <div class="detail"></div>
-      <div class="lineup"></div>
-      <div class="recipe"></div>
+      <section class="catch"></section>
+      <section class="detail"></section>
+      <section class="lineup"></section>
+      <section class="recipe"></section>
       <div class="info"></div>
-    </div>
+    </main>
     <footer>
       <div class="pagetop"></div>
       <div class="footer__logo"></div>
       <div class="copyright"></div>
       <div class="popup"></div>
     </footer>
+    <script src="/index.js"></script>
   </body>
 </html>
