@@ -5,8 +5,12 @@
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cristal Frost(模写)</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./stylesheet.css" />
   </head>
   <body>
     <header>
@@ -45,39 +49,69 @@
         </div>
       </section>
       <section class="detail">
-        <h2>クリスタルフロストとは？</h2>
-        <ul class="detail__list">
-          <li class="detail__item">
-            <span class="detail__item__text">氷のような<br />冷たさ</span>
-            <div class="detail__item__arrow">
-              <img src="img/arrow.png" alt="" />
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide first-slide">
+              <div class="first-slide__wrapper">
+                <h2 class="first-slide__title">クリスタルフロストとは？</h2>
+                <ul class="first-slide__list">
+                  <li class="first-slide__item">
+                    <div class="first-slide__text">氷のような<br />冷たさ</div>
+                    <div class="first-slide__arrow">
+                      <img src="img/arrow.png" alt="" />
+                    </div>
+                  </li>
+                  <li class="first-slide__item">
+                    <div class="first-slide__text">甘く爽やかな<br />風味</div>
+                    <div class="first-slide__arrow">
+                      <img src="img/arrow.png" alt="" />
+                    </div>
+                  </li>
+                  <li class="first-slide__item">
+                    <div class="first-slide__text">
+                      心も体も<br />リフレッシュ
+                    </div>
+                    <div class="first-slide__arrow">
+                      <img src="img/arrow.png" alt="" />
+                    </div>
+                  </li>
+                  <li class="first-slide__item">
+                    <div class="first-slide__text">
+                      料理の<br />隠し味として
+                    </div>
+                    <div class="first-slide__arrow">
+                      <img src="img/arrow.png" alt="" />
+                    </div>
+                  </li>
+                  <li class="first-slide__item">
+                    <div class="first-slide__text">容器への<br />こだわり</div>
+                    <div class="first-slide__arrow">
+                      <img src="img/arrow.png" alt="" />
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </li>
-          <li class="detail__item">
-            <span class="detail__item__text">甘く爽やかな<br />風味</span>
-            <div class="detail__item__arrow">
-              <img src="img/arrow.png" alt="" />
+            <div class="swiper-slide second-slide">
+              <div class="second-slide__wrapper">
+                <h2 class="second-slide__title">氷のような冷たさ</h2>
+              </div>
             </div>
-          </li>
-          <li class="detail__item">
-            <span class="detail__item__text">心も体も<br />リフレッシュ</span>
-            <div class="detail__item__arrow">
-              <img src="img/arrow.png" alt="" />
+            <div class="swiper-slide third-slide">
+              <h2 class="third-slide__title">甘く爽やかな風味</h2>
             </div>
-          </li>
-          <li class="detail__item">
-            <span class="detail__item__text">料理の<br />隠し味として</span>
-            <div class="detail__item__arrow">
-              <img src="img/arrow.png" alt="" />
+            <div class="swiper-slide fourth-slide">
+              <h2 class="fourth-slide__title">心も体もリフレッシュ</h2>
             </div>
-          </li>
-          <li class="detail__item">
-            <span class="detail__item__text">容器への<br />こだわり</span>
-            <div class="detail__item__arrow">
-              <img src="img/arrow.png" alt="" />
+            <div class="swiper-slide fifth-slide">
+              <h2 class="fifth-slide__title">料理の隠し味として</h2>
             </div>
-          </li>
-        </ul>
+            <div class="swiper-slide sixth-slide">
+              <h2 class="sixth-slide__title">容器へのこだわり</h2>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </section>
       <section class="lineup">
         <h2>ラインナップ</h2>
@@ -88,7 +122,26 @@
         </ul>
         <button class="section__button">製品情報</button>
       </section>
-      <section class="recipe"></section>
+      <section class="recipe">
+        <h2 class="recipe__title">レシピ</h2>
+        <ul class="recipe__list">
+          <li class="recipe__item">
+            <div class="recipe__text">シトラスサラダ</div>
+            <div class="recipe__img">画像</div>
+          </li>
+          <li class="recipe__item">
+            <div class="recipe__text">クリスタルスムージー</div>
+            <div class="recipe__img">画像</div>
+          </li>
+          <li class="recipe__item">
+            <div class="recipe__text">
+              テストテストテストテストテストテストテストテスト
+            </div>
+            <div class="recipe__img">画像</div>
+          </li>
+        </ul>
+        <button class="section__button">もっと見る</button>
+      </section>
       <div class="info"></div>
     </main>
     <footer>
@@ -97,6 +150,7 @@
       <div class="copyright"></div>
       <div class="popup"></div>
     </footer>
-    <script src="/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

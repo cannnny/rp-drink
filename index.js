@@ -5,3 +5,14 @@ menuButton.addEventListener("click", function () {
   menuButton.classList.toggle("open");
   spNavi.classList.toggle("open");
 });
+
+// swiper
+const swiper = new Swiper(".swiper", {
+  slideToClickedSlide: true,
+  slidesPerView: 1,
+  // watchSlidesProgress: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
