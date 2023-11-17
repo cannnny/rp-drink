@@ -134,8 +134,11 @@ section .section__button {
 }
 
 .catch {
-  background-color: #b2cbe4;
   height: calc(100vh - 120px);
+  background-image: url("./img/catch.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .catch h2 {
@@ -167,7 +170,7 @@ section .section__button {
   height: 90%;
   padding-top: 60px;
   display: flex;
-  background-color: #bbe2f1;
+  background-color: #b2cbe4;
 }
 
 .detail .swiper .swiper-wrapper .swiper-slide .first-slide__wrapper .first-slide__title {

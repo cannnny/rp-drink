@@ -134,8 +134,11 @@ section {
 }
 
 .catch {
-  background-color: #b2cbe4;
   height: calc(100vh - 120px);
+  background-image: url("./img/catch.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   h2 {
     display: none;
@@ -165,7 +168,7 @@ section {
           height: 90%;
           padding-top: 60px;
           display: flex;
-          background-color: #bbe2f1;
+          background-color: #b2cbe4;
 
           .first-slide__title {
             width: 10%;
