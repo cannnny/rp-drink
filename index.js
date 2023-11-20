@@ -19,3 +19,9 @@ const swiper = new Swiper(".swiper", {
     clickable: true,
   },
 });
+
+// pagetop
+const target = document.getElementById("js-mv");
+const pageScrollToTop = () => {
+  target.scrollIntoView({ behavior: "smooth" });
+};
