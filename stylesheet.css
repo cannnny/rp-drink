@@ -257,6 +257,10 @@ section .section__button {
   color: #afa7a7;
 }
 
+.detail .swiper .swiper-button-disabled {
+  display: none;
+}
+
 .detail .swiper .swiper-pagination {
   position: relative;
   height: 60px;
@@ -271,6 +275,10 @@ section .section__button {
   width: 12px;
   height: 12px;
   margin: 0 10px;
+}
+
+.detail .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #3c7186;
 }
 
 .lineup {
