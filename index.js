@@ -1,17 +1,21 @@
-const menuOpenButton = document.getElementById("js-header-button");
-const menuCloseButton = document.getElementsByClassName("open");
+const menuButton = document.getElementById("js-header-button");
 const spNavi = document.getElementById("js-sp-navi");
 
 const noScroll = (e) => {
   e.preventDefault();
 };
 
-menuOpenButton.addEventListener("click", function () {
-  menuOpenButton.classList.toggle("open");
+menuButton.addEventListener("click", function () {
+  menuButton.classList.toggle("open");
   spNavi.classList.toggle("open");
 
   document.addEventListener("touchmove", noScroll, { passive: false });
   document.addEventListener("wheel", noScroll, { passive: false });
+
+  if (!menuButton.classList.contains("open")) {
+    document.removeEventListener("touchmove", noScroll);
+    document.removeEventListener("wheel", noScroll);
+  }
 });
 
 // swiper
