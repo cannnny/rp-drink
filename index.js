@@ -10,7 +10,10 @@ menuButton.addEventListener("click", function () {
 const swiper = new Swiper(".swiper", {
   slideToClickedSlide: true,
   slidesPerView: 1,
-  // watchSlidesProgress: true,
+  navigation: {
+    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
