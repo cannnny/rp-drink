@@ -306,17 +306,28 @@ section {
 }
 
 .lineup {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid blue;
 
   .lineup__list {
     margin-top: 50px;
   }
+
   .lineup__item {
     width: 200px;
     height: 200px;
+
+    div {
+      width: 200px;
+      height: 180px;
+      background-color: #ccc;
+    }
+  }
+
+  .lineup__item + .lineup__item {
+    margin-top: 10px;
   }
 }
 
