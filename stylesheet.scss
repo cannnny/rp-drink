@@ -10,11 +10,13 @@ h2 {
 }
 
 .header__menu {
-  width: 100vw;
+  width: 100%;
   height: 80px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: fixed;
+  z-index: 99;
 
   .header__menu__button {
     width: 50px;
@@ -23,6 +25,7 @@ h2 {
     background-color: transparent;
     margin-top: 25px;
     margin-right: 25px;
+    position: absolute;
 
     span {
       width: 100%;
@@ -123,7 +126,7 @@ section {
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: calc(100vh - 60px);
+  height: 100vh;
   background-image: url("./img/mv.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -131,6 +134,7 @@ section {
 
   img {
     width: 250px;
+    margin: 25px;
   }
 }
 
@@ -197,6 +201,7 @@ section {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            z-index: 1;
 
             &:nth-child(1) {
               top: 0;
