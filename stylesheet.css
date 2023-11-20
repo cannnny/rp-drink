@@ -165,19 +165,22 @@ section .section__button {
 
 .detail .swiper .swiper-wrapper {
   height: calc(100% - 60px);
+}
+
+.detail .swiper .swiper-wrapper .swiper-slide {
   background-color: #b2cbe4;
 }
 
 .detail .swiper .swiper-wrapper .outline-slide {
-  height: 90%;
-  padding-top: 60px;
   display: flex;
-  background-color: #b2cbe4;
+  background-image: url("/img/detail.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .detail .swiper .swiper-wrapper .outline-slide .outline-slide__title {
   width: 10%;
-  margin: 0 30px;
+  margin: 40px;
   text-align: left;
   writing-mode: vertical-rl;
 }
@@ -185,6 +188,7 @@ section .section__button {
 .detail .swiper .swiper-wrapper .outline-slide .outline-slide__list {
   position: relative;
   width: 90%;
+  margin-top: 30px;
   text-align: center;
   line-height: 25px;
 }
@@ -239,10 +243,22 @@ section .section__button {
   height: 30px;
 }
 
-.detail .swiper .swiper-wrapper .content-slide h2 {
-  margin-top: 60px;
-  margin-left: 40px;
+.detail .swiper .swiper-wrapper .content-slide .content-slide__header {
+  margin-top: 40px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.detail .swiper .swiper-wrapper .content-slide .content-slide__title {
+  margin-top: 50px;
+  margin-left: 30px;
   text-align: left;
+  font-size: 30px;
+}
+
+.detail .swiper .swiper-wrapper .content-slide p {
+  margin: 20px 30px;
+  line-height: 30px;
 }
 
 .detail .swiper .swiper-button-prev,
