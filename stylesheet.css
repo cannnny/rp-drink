@@ -374,21 +374,22 @@ section .section__button {
   position: relative;
 }
 
-.detail .swiper .swiper-wrapper .content-slide .content-slide__header {
-  margin-top: 40px;
-  margin-left: 30px;
+.detail .swiper .swiper-wrapper .content-slide .content-slide__text {
+  margin: 40px 30px;
+}
+
+.detail .swiper .swiper-wrapper .content-slide .content-slide__text .content-slide__header {
   font-size: 18px;
 }
 
-.detail .swiper .swiper-wrapper .content-slide .content-slide__title {
+.detail .swiper .swiper-wrapper .content-slide .content-slide__text .content-slide__title {
   margin-top: 50px;
-  margin-left: 30px;
   text-align: left;
   font-size: 30px;
 }
 
-.detail .swiper .swiper-wrapper .content-slide p {
-  margin: 20px 30px;
+.detail .swiper .swiper-wrapper .content-slide .content-slide__text p {
+  margin: 20px 0;
   line-height: 30px;
 }
 
