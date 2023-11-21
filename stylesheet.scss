@@ -235,7 +235,7 @@ section {
           writing-mode: vertical-rl;
 
           @include mediaquery() {
-            width: 30%;
+            width: 20%;
             font-size: 40px;
             text-align: center;
           }
@@ -345,28 +345,55 @@ section {
       .content-slide {
         position: relative;
 
+        @include mediaquery() {
+          display: flex;
+          align-items: center;
+        }
+
         .content-slide__text {
           margin: 40px 30px;
 
+          @include mediaquery() {
+            margin-right: 40px;
+            margin-left: 100px;
+          }
+
           .content-slide__header {
             font-size: 18px;
+
+            @include mediaquery() {
+              font-size: 24px;
+            }
           }
 
           .content-slide__title {
             margin-top: 50px;
             text-align: left;
             font-size: 30px;
+
+            @include mediaquery() {
+              font-size: 38px;
+            }
           }
 
           p {
             margin: 20px 0;
             line-height: 30px;
+
+            @include mediaquery() {
+              font-size: 20px;
+              margin: 40px 0;
+            }
           }
         }
 
         .content-slide__image {
           position: absolute;
           bottom: 0;
+
+          @include mediaquery() {
+            position: static;
+          }
 
           img {
             width: auto;
@@ -377,9 +404,18 @@ section {
         .image--flex {
           display: flex;
 
+          @include mediaquery() {
+            display: block;
+          }
+
           img {
             width: 50%;
             height: auto;
+
+            @include mediaquery() {
+              width: auto;
+              height: 0%;
+            }
           }
         }
       }
