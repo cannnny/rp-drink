@@ -1,3 +1,4 @@
+// sp-menu開閉
 const menuButton = document.getElementById("js-header-button");
 const spNavi = document.getElementById("js-sp-navi");
 
