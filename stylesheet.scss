@@ -21,10 +21,6 @@ header {
     background-color: transparent;
     z-index: 99;
 
-    @include mediaquery() {
-      display: none;
-    }
-
     span {
       display: block;
       width: 100%;
@@ -64,6 +60,10 @@ header {
         content: "close";
       }
     }
+
+    @include mediaquery() {
+      display: none;
+    }
   }
 
   .sp-navi {
@@ -73,10 +73,6 @@ header {
     height: 100vh;
     background-color: #ffffff;
     z-index: 50;
-
-    @include mediaquery() {
-      display: none;
-    }
 
     .sp-navi__list {
       display: flex;
@@ -110,6 +106,10 @@ header {
 
     &.open {
       display: block;
+    }
+
+    @include mediaquery() {
+      display: none;
     }
   }
 
@@ -233,6 +233,12 @@ section {
           margin: 40px;
           text-align: left;
           writing-mode: vertical-rl;
+
+          @include mediaquery() {
+            width: 30%;
+            font-size: 40px;
+            text-align: center;
+          }
         }
 
         .outline-slide__list {
@@ -240,7 +246,16 @@ section {
           width: 90%;
           margin-top: 30px;
           text-align: center;
+          font-size: 16px;
           line-height: 25px;
+
+          @include mediaquery() {
+            width: 70%;
+            margin-top: 400px;
+            margin-right: 100px;
+            font-size: 24px;
+            line-height: 35px;
+          }
 
           .outline-slide__item {
             position: absolute;
@@ -252,34 +267,71 @@ section {
             align-items: center;
             justify-content: center;
 
+            @include mediaquery() {
+              width: 200px;
+              height: 185px;
+            }
+
             &:nth-child(1) {
               top: 0;
               right: 8%;
               border-radius: 53% 29% 22% 47% / 28% 48% 34% 39%;
+
+              @include mediaquery() {
+                top: 15%;
+                right: 5%;
+              }
             }
+
             &:nth-child(2) {
               top: 15%;
               right: 43%;
               border-radius: 37% 41% 35% 46% / 36% 32% 59% 39%;
+
+              @include mediaquery() {
+                top: 20%;
+                right: 55%;
+              }
             }
+
             &:nth-child(3) {
               top: 28%;
               right: 10%;
               border-radius: 57% 29% 35% 46% / 40% 60% 23% 27%;
+
+              @include mediaquery() {
+                top: 30%;
+                right: 25%;
+              }
             }
+
             &:nth-child(4) {
               top: 44%;
               right: 38%;
               border-radius: 69% 32% 29% 42% / 35% 39% 40% 48%;
+
+              @include mediaquery() {
+                top: 48%;
+                right: 45%;
+              }
             }
+
             &:nth-child(5) {
               top: 60%;
               right: 5%;
               border-radius: 44% 41% 46% 35% / 50% 39% 42% 27%;
+
+              @include mediaquery() {
+                top: 55%;
+              }
             }
 
             .outline-slide__arrow {
               margin-top: 5px;
+
+              @include mediaquery() {
+                margin-top: 10px;
+              }
 
               img {
                 width: 30px;
@@ -336,12 +388,22 @@ section {
     .swiper-button-next {
       top: 100%;
       transform: translateY(-70%);
+
+      @include mediaquery() {
+        top: 50%;
+        margin: 0 20px;
+        transform: translateY(0);
+      }
     }
 
     .swiper-button-prev::after,
     .swiper-button-next::after {
       font-size: 25px;
       color: #afa7a7;
+
+      @include mediaquery() {
+        font-size: 60px;
+      }
     }
 
     .swiper-button-disabled {
