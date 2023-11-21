@@ -116,7 +116,6 @@ section .section__button {
   font-size: 18px;
   font-family: "Kiwi Maru", serif;
   background-color: white;
-  border: 1px solid black;
 }
 
 .mv {
@@ -157,7 +156,6 @@ section .section__button {
 .detail {
   padding: 0;
   height: 100vh;
-  border: 1px solid red;
   z-index: -1;
 }
 
@@ -245,6 +243,10 @@ section .section__button {
   height: 30px;
 }
 
+.detail .swiper .swiper-wrapper .content-slide {
+  position: relative;
+}
+
 .detail .swiper .swiper-wrapper .content-slide .content-slide__header {
   margin-top: 40px;
   margin-left: 30px;
@@ -261,6 +263,25 @@ section .section__button {
 .detail .swiper .swiper-wrapper .content-slide p {
   margin: 20px 30px;
   line-height: 30px;
+}
+
+.detail .swiper .swiper-wrapper .content-slide .content-slide__image {
+  position: absolute;
+  bottom: 0;
+}
+
+.detail .swiper .swiper-wrapper .content-slide .content-slide__image img {
+  width: auto;
+  height: 50%;
+}
+
+.detail .swiper .swiper-wrapper .content-slide .image--flex {
+  display: flex;
+}
+
+.detail .swiper .swiper-wrapper .content-slide .image--flex img {
+  width: 50%;
+  height: auto;
 }
 
 .detail .swiper .swiper-button-prev,
@@ -303,7 +324,6 @@ section .section__button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid blue;
 }
 
 .lineup .lineup__list {

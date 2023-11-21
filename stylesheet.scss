@@ -117,7 +117,6 @@ section {
     font-size: 18px;
     font-family: "Kiwi Maru", serif;
     background-color: white;
-    border: 1px solid black;
   }
 }
 
@@ -159,7 +158,6 @@ section {
 .detail {
   padding: 0;
   height: 100vh;
-  border: 1px solid red;
   z-index: -1;
 
   .swiper {
@@ -241,6 +239,8 @@ section {
       }
 
       .content-slide {
+        position: relative;
+
         .content-slide__header {
           margin-top: 40px;
           margin-left: 30px;
@@ -257,6 +257,25 @@ section {
         p {
           margin: 20px 30px;
           line-height: 30px;
+        }
+
+        .content-slide__image {
+          position: absolute;
+          bottom: 0;
+
+          img {
+            width: auto;
+            height: 50%;
+          }
+        }
+
+        .image--flex {
+          display: flex;
+
+          img {
+            width: 50%;
+            height: auto;
+          }
         }
       }
     }
@@ -303,7 +322,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid blue;
 
   .lineup__list {
     margin-top: 50px;
