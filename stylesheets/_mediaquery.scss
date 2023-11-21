@@ -1,0 +1,10 @@
+$breakpoint: (
+  "sp": "screen and (min-width: 400px)",
+  "lg": "screen and (min-width: 1024px)",
+) !default;
+
+@mixin mediaquery($defaultSize: lg) {
+  @media #{map-get($breakpoint, $defaultSize)} {
+    @content;
+  }
+}

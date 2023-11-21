@@ -19,6 +19,12 @@ header .header__menu__button {
   z-index: 99;
 }
 
+@media screen and (min-width: 1024px) {
+  header .header__menu__button {
+    display: none;
+  }
+}
+
 header .header__menu__button span {
   display: block;
   width: 100%;
@@ -69,6 +75,12 @@ header .sp-navi {
   z-index: 50;
 }
 
+@media screen and (min-width: 1024px) {
+  header .sp-navi {
+    display: none;
+  }
+}
+
 header .sp-navi .sp-navi__list {
   display: flex;
   flex-direction: column;
@@ -101,6 +113,37 @@ header .sp-navi .sp-navi__list .sp-navi__item:hover {
 
 header .sp-navi.open {
   display: block;
+}
+
+header .pc-navi {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 80px;
+  background-color: #ffffff;
+  z-index: 50;
+}
+
+@media screen and (min-width: 1024px) {
+  header .pc-navi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+header .pc-navi .pc-navi__logo img {
+  width: 200px;
+}
+
+header .pc-navi .pc-navi__list {
+  display: flex;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+header .pc-navi .pc-navi__item + .pc-navi__item {
+  margin-left: 20px;
 }
 
 section {

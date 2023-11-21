@@ -1,3 +1,4 @@
+@import "stylesheets/_mediaquery.scss";
 @import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap");
 
 body {
@@ -19,6 +20,10 @@ header {
     border: none;
     background-color: transparent;
     z-index: 99;
+
+    @include mediaquery() {
+      display: none;
+    }
 
     span {
       display: block;
@@ -69,6 +74,10 @@ header {
     background-color: #ffffff;
     z-index: 50;
 
+    @include mediaquery() {
+      display: none;
+    }
+
     .sp-navi__list {
       display: flex;
       flex-direction: column;
@@ -101,6 +110,37 @@ header {
 
     &.open {
       display: block;
+    }
+  }
+
+  .pc-navi {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    background-color: #ffffff;
+    z-index: 50;
+
+    @include mediaquery() {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .pc-navi__logo {
+      img {
+        width: 200px;
+      }
+    }
+
+    .pc-navi__list {
+      display: flex;
+      margin-right: 20px;
+      font-size: 14px;
+    }
+
+    .pc-navi__item + .pc-navi__item {
+      margin-left: 20px;
     }
   }
 }
