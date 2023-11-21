@@ -173,6 +173,10 @@ section {
   img {
     width: 250px;
     margin: 25px;
+
+    @include mediaquery() {
+      display: none;
+    }
   }
 }
 

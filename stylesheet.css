@@ -177,6 +177,12 @@ section .section__button {
   margin: 25px;
 }
 
+@media screen and (min-width: 1024px) {
+  .mv img {
+    display: none;
+  }
+}
+
 .catch {
   height: calc(100vh - 120px);
   background-image: url("./img/catch.jpg");
