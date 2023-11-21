@@ -151,8 +151,8 @@ header .pc-navi .pc-navi__item + .pc-navi__item {
 }
 
 section {
-  padding: 60px 0;
   width: 100vw;
+  padding: 60px 0;
 }
 
 section .section__button {
@@ -204,6 +204,14 @@ section .section__button {
   margin-right: 10%;
   font-size: 18px;
   line-height: 45px;
+}
+
+@media screen and (min-width: 1024px) {
+  .catch .catch__text {
+    margin-top: 10%;
+    font-size: 28px;
+    line-height: 50px;
+  }
 }
 
 .detail {

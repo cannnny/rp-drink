@@ -148,8 +148,8 @@ header {
 }
 
 section {
-  padding: 60px 0;
   width: 100vw;
+  padding: 60px 0;
 
   .section__button {
     display: block;
@@ -198,6 +198,12 @@ section {
     margin-right: 10%;
     font-size: 18px;
     line-height: 45px;
+
+    @include mediaquery() {
+      margin-top: 10%;
+      font-size: 28px;
+      line-height: 50px;
+    }
   }
 }
 
