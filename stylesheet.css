@@ -132,6 +132,10 @@ header .pc-navi {
   }
 }
 
+header .pc-navi .pc-navi__logo {
+  margin-left: 20px;
+}
+
 header .pc-navi .pc-navi__logo img {
   width: 200px;
 }
