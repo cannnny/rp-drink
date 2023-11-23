@@ -664,8 +664,10 @@ section .section__button {
   margin-bottom: 40px;
 }
 
-.info .info__flex-container .section__button + .section__button {
-  margin-left: 20px;
+@media screen and (min-width: 1024px) {
+  .info .info__flex-container .section__button + .section__button {
+    margin-left: 20px;
+  }
 }
 
 footer {
