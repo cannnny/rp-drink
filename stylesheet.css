@@ -3,6 +3,12 @@ body {
   font-family: "Kiwi Maru", serif;
 }
 
+@media screen and (min-width: 1024px) {
+  body {
+    padding-bottom: 120px;
+  }
+}
+
 h2 {
   text-align: center;
   font-size: 28px;
@@ -693,7 +699,19 @@ footer .footer__logo img {
   width: 200px;
 }
 
+@media screen and (min-width: 1024px) {
+  footer .footer__logo img {
+    width: 300px;
+  }
+}
+
 footer .copyright {
   padding: 20px 0;
   font-size: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer .copyright {
+    font-size: 18px;
+  }
 }
