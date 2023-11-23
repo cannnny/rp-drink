@@ -85,6 +85,7 @@ header .sp-navi {
   height: 100vh;
   background-color: #ffffff;
   z-index: 50;
+  animation: fadeout 0.5s forwards;
 }
 
 header .sp-navi .sp-navi__list {
@@ -101,6 +102,14 @@ header .sp-navi .sp-navi__list .sp-navi__item {
   line-height: 30px;
   text-align: center;
   border-bottom: 1px solid #afa7a7;
+}
+
+header .sp-navi .sp-navi__list .sp-navi__item:hover {
+  color: #afa7a7;
+}
+
+header .sp-navi.open {
+  display: block;
   animation: fadein 0.3s forwards;
 }
 
@@ -111,14 +120,6 @@ header .sp-navi .sp-navi__list .sp-navi__item {
   100% {
     opacity: 1;
   }
-}
-
-header .sp-navi .sp-navi__list .sp-navi__item:hover {
-  color: #afa7a7;
-}
-
-header .sp-navi.open {
-  display: block;
 }
 
 @media screen and (min-width: 1024px) {

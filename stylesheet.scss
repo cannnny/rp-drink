@@ -81,6 +81,7 @@ header {
     height: 100vh;
     background-color: #ffffff;
     z-index: 50;
+    animation: fadeout 0.5s forwards;
 
     .sp-navi__list {
       display: flex;
@@ -95,16 +96,6 @@ header {
         line-height: 30px;
         text-align: center;
         border-bottom: 1px solid #afa7a7;
-        animation: fadein 0.3s forwards;
-
-        @keyframes fadein {
-          0% {
-            opacity: 0;
-          }
-          100% {
-            opacity: 1;
-          }
-        }
 
         &:hover {
           color: #afa7a7;
@@ -114,6 +105,16 @@ header {
 
     &.open {
       display: block;
+      animation: fadein 0.3s forwards;
+    }
+
+    @keyframes fadein {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
     }
 
     @include mediaquery() {
