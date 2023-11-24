@@ -24,6 +24,10 @@
       height: 180px;
       background-color: #cccccc;
     }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__item + &__item {

@@ -534,6 +534,10 @@
   background-color: #cccccc;
 }
 
+.lineup__item:hover {
+  cursor: pointer;
+}
+
 .lineup__item + .lineup__item {
   margin-top: 10px;
 }
@@ -728,4 +732,8 @@ section {
   font-family: "Kiwi Maru", serif;
   background-color: white;
   color: black;
+}
+
+.section__button:hover {
+  cursor: pointer;
 }

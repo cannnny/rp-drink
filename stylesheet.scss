@@ -41,4 +41,8 @@ section {
   font-family: "Kiwi Maru", serif;
   background-color: white;
   color: black;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
