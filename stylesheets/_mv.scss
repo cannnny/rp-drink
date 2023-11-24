@@ -8,12 +8,14 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  img {
-    width: 250px;
-    margin: 25px;
+  &__logo {
+    img {
+      width: 250px;
+      margin: 25px;
 
-    @include mediaquery() {
-      display: none;
+      @include mediaquery() {
+        display: none;
+      }
     }
   }
 }
