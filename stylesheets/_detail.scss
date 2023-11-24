@@ -47,7 +47,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #ffffff;
+      background-color: white;
 
       .swiper-pagination-bullet {
         width: 12px;
@@ -106,7 +106,7 @@
     position: absolute;
     width: 135px;
     height: 120px;
-    background-color: #fff;
+    background-color: white;
 
     &:nth-child(1) {
       top: 0;
