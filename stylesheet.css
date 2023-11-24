@@ -198,15 +198,14 @@ header .pc-navi .pc-navi__item + .pc-navi__item {
 }
 
 .detail .swiper {
+  width: 100vw;
+  max-width: 1440px;
   height: 100%;
+  background-color: #b2cbe4;
 }
 
 .detail .swiper .swiper-wrapper {
   height: calc(100% - 60px);
-}
-
-.detail .swiper .swiper-wrapper .swiper-slide {
-  background-color: #b2cbe4;
 }
 
 .detail .swiper .swiper-wrapper .outline-slide {
@@ -481,6 +480,7 @@ header .pc-navi .pc-navi__item + .pc-navi__item {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #ffffff;
 }
 
 .detail .swiper .swiper-pagination .swiper-pagination-bullet {
