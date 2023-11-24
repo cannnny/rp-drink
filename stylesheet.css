@@ -673,6 +673,10 @@
   margin: 5px auto;
 }
 
+.footer__button--pagetop:hover {
+  cursor: pointer;
+}
+
 .footer__logo {
   display: flex;
   justify-content: center;
