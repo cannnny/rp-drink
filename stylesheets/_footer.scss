@@ -1,11 +1,11 @@
-footer {
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
   height: 300px;
 
-  .pagetop {
+  &__button--pagetop {
     margin: 20px 0 100px 0;
     color: #afa7a7;
 
@@ -16,7 +16,7 @@ footer {
     }
   }
 
-  .footer__logo {
+  &__logo {
     display: flex;
     justify-content: center;
     width: 80%;
@@ -32,7 +32,7 @@ footer {
     }
   }
 
-  .copyright {
+  &__text {
     padding: 20px 0;
     font-size: 12px;
 

@@ -1,56 +1,58 @@
-.header__button {
-  position: fixed;
-  width: 50px;
-  height: 60px;
-  top: 25px;
-  right: 25px;
-  border: none;
-  background-color: transparent;
-  z-index: 99;
+.header {
+  &__button {
+    position: fixed;
+    width: 50px;
+    height: 60px;
+    top: 25px;
+    right: 25px;
+    border: none;
+    background-color: transparent;
+    z-index: 99;
 
-  span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: black;
-  }
-
-  span + span {
-    margin-top: 10px;
-  }
-
-  &::after {
-    display: block;
-    height: 20px;
-    margin-top: 5px;
-    content: "menu";
-  }
-
-  &.open {
     span {
-      margin-top: 10px;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: black;
+    }
 
-      &:nth-child(1) {
-        transform: translateY(5px) rotate(45deg);
-      }
-      &:nth-child(2) {
-        display: none;
-      }
-      &:nth-child(3) {
-        transform: translateY(-6px) rotate(-45deg);
-      }
+    span + span {
+      margin-top: 10px;
     }
 
     &::after {
       display: block;
       height: 20px;
-      margin-top: 10px;
-      content: "close";
+      margin-top: 5px;
+      content: "menu";
     }
-  }
 
-  @include mediaquery() {
-    display: none;
+    &.open {
+      span {
+        margin-top: 10px;
+
+        &:nth-child(1) {
+          transform: translateY(5px) rotate(45deg);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          transform: translateY(-6px) rotate(-45deg);
+        }
+      }
+
+      &::after {
+        display: block;
+        height: 20px;
+        margin-top: 10px;
+        content: "close";
+      }
+    }
+
+    @include mediaquery() {
+      display: none;
+    }
   }
 }
 
