@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap");
-header .header__menu__button {
+.header__button {
   width: 50px;
   height: 60px;
   position: fixed;
@@ -10,54 +10,54 @@ header .header__menu__button {
   z-index: 99;
 }
 
-header .header__menu__button span {
+.header__button span {
   display: block;
   width: 100%;
   height: 2px;
   background-color: black;
 }
 
-header .header__menu__button span + span {
+.header__button span + span {
   margin-top: 10px;
 }
 
-header .header__menu__button::after {
-  height: 20px;
+.header__button::after {
   display: block;
+  height: 20px;
   margin-top: 5px;
   content: "menu";
 }
 
-header .header__menu__button.open span {
+.header__button.open span {
   margin-top: 10px;
 }
 
-header .header__menu__button.open span:nth-child(1) {
+.header__button.open span:nth-child(1) {
   transform: translateY(5px) rotate(45deg);
 }
 
-header .header__menu__button.open span:nth-child(2) {
+.header__button.open span:nth-child(2) {
   display: none;
 }
 
-header .header__menu__button.open span:nth-child(3) {
+.header__button.open span:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
 
-header .header__menu__button.open::after {
-  height: 20px;
+.header__button.open::after {
   display: block;
+  height: 20px;
   margin-top: 10px;
   content: "close";
 }
 
 @media screen and (min-width: 1024px) {
-  header .header__menu__button {
+  .header__button {
     display: none;
   }
 }
 
-header .sp-navi {
+.sp-navi {
   display: none;
   position: fixed;
   width: 100vw;
@@ -67,14 +67,14 @@ header .sp-navi {
   animation: fadeout 0.5s forwards;
 }
 
-header .sp-navi .sp-navi__list {
+.sp-navi__list {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 60px;
 }
 
-header .sp-navi .sp-navi__list .sp-navi__item {
+.sp-navi__item {
   width: 240px;
   height: 30px;
   padding: 15px 0;
@@ -83,11 +83,11 @@ header .sp-navi .sp-navi__list .sp-navi__item {
   border-bottom: 1px solid #afa7a7;
 }
 
-header .sp-navi .sp-navi__list .sp-navi__item:hover {
+.sp-navi__item:hover {
   color: #afa7a7;
 }
 
-header .sp-navi.open {
+.sp-navi.open {
   display: block;
   animation: fadein 0.3s forwards;
 }
@@ -102,12 +102,12 @@ header .sp-navi.open {
 }
 
 @media screen and (min-width: 1024px) {
-  header .sp-navi {
+  .sp-navi {
     display: none;
   }
 }
 
-header .pc-navi {
+.pc-navi {
   display: none;
   position: fixed;
   width: 100vw;
@@ -116,30 +116,30 @@ header .pc-navi {
   z-index: 50;
 }
 
-@media screen and (min-width: 1024px) {
-  header .pc-navi {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-header .pc-navi .pc-navi__logo {
+.pc-navi__logo {
   margin-left: 20px;
 }
 
-header .pc-navi .pc-navi__logo img {
+.pc-navi__logo img {
   width: 200px;
 }
 
-header .pc-navi .pc-navi__list {
+.pc-navi__list {
   display: flex;
   margin-right: 20px;
   font-size: 14px;
 }
 
-header .pc-navi .pc-navi__item + .pc-navi__item {
+.pc-navi__item + .pc-navi__item {
   margin-left: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .pc-navi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .mv {
