@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
 
-  .lineup__list {
+  &__list {
     margin-top: 50px;
 
     @include mediaquery() {
@@ -15,7 +15,7 @@
     }
   }
 
-  .lineup__item {
+  &__item {
     width: 200px;
     height: 200px;
 
@@ -26,7 +26,7 @@
     }
   }
 
-  .lineup__item + .lineup__item {
+  &__item + &__item {
     margin-top: 10px;
 
     @include mediaquery() {

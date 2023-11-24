@@ -499,12 +499,12 @@
   align-items: center;
 }
 
-.lineup .lineup__list {
+.lineup__list {
   margin-top: 50px;
 }
 
 @media screen and (min-width: 1024px) {
-  .lineup .lineup__list {
+  .lineup__list {
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr;
@@ -513,23 +513,23 @@
   }
 }
 
-.lineup .lineup__item {
+.lineup__item {
   width: 200px;
   height: 200px;
 }
 
-.lineup .lineup__item div {
+.lineup__item div {
   width: 200px;
   height: 180px;
   background-color: #cccccc;
 }
 
-.lineup .lineup__item + .lineup__item {
+.lineup__item + .lineup__item {
   margin-top: 10px;
 }
 
 @media screen and (min-width: 1024px) {
-  .lineup .lineup__item + .lineup__item {
+  .lineup__item + .lineup__item {
     margin-top: 0;
   }
 }
