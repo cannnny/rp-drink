@@ -1,0 +1,36 @@
+.lineup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .lineup__list {
+    margin-top: 50px;
+
+    @include mediaquery() {
+      display: grid;
+      place-items: center;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+      margin-top: 60px;
+    }
+  }
+
+  .lineup__item {
+    width: 200px;
+    height: 200px;
+
+    div {
+      width: 200px;
+      height: 180px;
+      background-color: #cccccc;
+    }
+  }
+
+  .lineup__item + .lineup__item {
+    margin-top: 10px;
+
+    @include mediaquery() {
+      margin-top: 0;
+    }
+  }
+}

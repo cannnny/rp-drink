@@ -1,0 +1,24 @@
+.catch {
+  height: calc(100vh - 120px);
+  background-image: url("./img/catch.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  h2 {
+    display: none;
+  }
+
+  .catch__text {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 18px;
+    line-height: 45px;
+
+    @include mediaquery() {
+      margin-top: 10%;
+      font-size: 28px;
+      line-height: 50px;
+    }
+  }
+}
