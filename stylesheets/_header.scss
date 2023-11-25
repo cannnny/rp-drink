@@ -10,6 +10,11 @@
     background-color: transparent;
     z-index: 99;
 
+    // PCではハンバーガーメニューを表示しない
+    @include mediaquery() {
+      display: none;
+    }
+
     // ハンバーガーメニューの横3本線
     span {
       display: block;
@@ -55,11 +60,6 @@
         content: "close";
       }
     }
-
-    // PCではハンバーガーメニューを表示しない
-    @include mediaquery() {
-      display: none;
-    }
   }
 }
 
@@ -72,20 +72,9 @@
   background-color: white;
   z-index: 50;
 
-  &__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60px;
-  }
-
-  &__item {
-    width: 240px;
-    height: 30px;
-    padding: 15px 0;
-    line-height: 30px;
-    text-align: center;
-    border-bottom: 1px solid #afa7a7;
+  // PCでは表示しない
+  @include mediaquery() {
+    display: none;
   }
 
   // ハンバーガーメニューがopen状態になったらフェードインで表示
@@ -103,9 +92,20 @@
     }
   }
 
-  // PCでは表示しない
-  @include mediaquery() {
-    display: none;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  &__item {
+    width: 240px;
+    height: 30px;
+    padding: 15px 0;
+    line-height: 30px;
+    text-align: center;
+    border-bottom: 1px solid #afa7a7;
   }
 }
 
@@ -126,6 +126,13 @@
     }
   }
 
+  // PCの時のみ表示(ロゴ、メニュー横並び)
+  @include mediaquery() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   &__list {
     display: flex;
     margin-right: 20px;
@@ -140,12 +147,5 @@
   &__item:hover {
     cursor: pointer;
     color: #afa7a7;
-  }
-
-  // PCの時のみ表示(ロゴ、メニュー横並び)
-  @include mediaquery() {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 }
