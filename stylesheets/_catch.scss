@@ -4,21 +4,22 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 60px 0;
 
-  h2 {
-    display: none;
-  }
+  // h2 {
+  //   display: none;
+  // }
 
   .catch__text {
     margin-left: 10%;
     margin-right: 10%;
     font-size: 18px;
-    line-height: 45px;
+    line-height: 2.5;
 
     @include mediaquery() {
       margin-top: 10%;
       font-size: 28px;
-      line-height: 50px;
+      line-height: 1.78;
     }
   }
 }

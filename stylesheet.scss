@@ -28,13 +28,13 @@ h2 {
 }
 
 section {
-  width: 100vw;
+  // width: 100vw;
   max-width: 1440px;
   margin: 0 auto;
   padding: 60px 0;
 }
 
-.section__button {
+.button {
   display: block;
   width: 280px;
   height: 50px;
@@ -44,7 +44,9 @@ section {
   background-color: white;
   color: black;
 
-  &:hover {
-    cursor: pointer;
+  @include mediaquery() {
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

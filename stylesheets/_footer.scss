@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  // width: 100vw;
   height: 300px;
 
   &__button--pagetop {
-    margin: 20px 0 100px 0;
+    margin: 20px 0 100px;
     color: #afa7a7;
 
     img {
